@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – අපි යමු.lk</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand-custom" href="index.html">අපි යමු.lk</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span style="color:white; font-size:1.5rem">&#9776;</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link-custom" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link-custom active" href="contact.html">Contact Us</a></li>
+          <li class="nav-item ms-2">
+            <a class="btn-primary-custom" href="events.html" style="padding:0.5rem 1.5rem; font-size:0.9rem">Browse Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="padding-bottom:2rem">
+    <div class="page-hero-bg"></div>
+    <div class="container" style="position:relative; z-index:2">
+      <span class="section-label">We'd Love to Hear From You</span>
+      <h1 class="mb-3">
+        Get In <span style="background:linear-gradient(135deg,#F4A623,#c026d3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Touch</span>
+      </h1>
+      <p style="color:rgba(255,255,255,0.6); font-size:1.1rem; max-width:500px; margin:0 auto">
+        Have a question, want to list your event, or just say hello? We're here for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+
+        <!-- Left: Contact Info -->
+        <div class="col-lg-5 fade-in-up">
+
+          <h2 style="font-size:2rem; margin-bottom:2rem">Reach Out</h2>
+
+          <!-- Info Cards -->
+          <div class="contact-info-card">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h5>Email Us</h5>
+              <p>hello@apiyamu.lk</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h5>Call Us</h5>
+              <p>+94 11 234 5678</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h5>Visit Us</h5>
+              <p>No. 25, Galle Road, Colombo 03, Sri Lanka</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h5>Office Hours</h5>
+              <p>Mon–Fri: 9am – 6pm (IST)</p>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder mt-4">
+            🗺️
+            <span>Interactive Map — Coming Soon</span>
+          </div>
+
+          <!-- Social Links -->
+          <div class="mt-4">
+            <p style="font-size:0.85rem; color:rgba(255,255,255,0.45); text-transform:uppercase; letter-spacing:0.15em; margin-bottom:1rem">Follow Us</p>
+            <div class="social-links">
+              <a class="social-link" href="#" title="Instagram">📸</a>
+              <a class="social-link" href="#" title="Facebook">👥</a>
+              <a class="social-link" href="#" title="Twitter">🐦</a>
+              <a class="social-link" href="#" title="LinkedIn">💼</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="col-lg-7 fade-in-up fade-delay-2">
+          <div class="contact-form-wrap">
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.75rem; margin-bottom:0.5rem">Send Us a Message</h3>
+            <p style="color:rgba(255,255,255,0.45); font-size:0.9rem; margin-bottom:2rem">We'll get back to you within 24 hours.</p>
+
+            <form id="contactForm" novalidate>
+
+              <!-- Name & Email Row -->
+              <div class="row g-3 mb-0">
+                <div class="col-md-6">
+                  <div class="form-group-custom">
+                    <label class="form-label-custom" for="contactName">Full Name *</label>
+                    <input type="text" class="form-control-custom" id="contactName" name="name" placeholder="Your full name" required />
+                    <div class="error-msg">Please enter your name.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group-custom">
+                    <label class="form-label-custom" for="contactEmail">Email Address *</label>
+                    <input type="email" class="form-control-custom" id="contactEmail" name="email" placeholder="you@example.com" required />
+                    <div class="error-msg">Please enter a valid email.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group-custom">
+                <label class="form-label-custom" for="contactPhone">Phone Number</label>
+                <input type="tel" class="form-control-custom" id="contactPhone" name="phone" placeholder="+94 77 123 4567" />
+                <div class="error-msg"></div>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group-custom">
+                <label class="form-label-custom" for="contactSubject">Subject *</label>
+                <select class="form-control-custom" id="contactSubject" name="subject" required>
+                  <option value="">Select a topic...</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="list-event">List My Event</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="sponsorship">Sponsorship</option>
+                  <option value="support">Technical Support</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="error-msg">Please select a subject.</div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group-custom">
+                <label class="form-label-custom" for="contactMessage">Message *</label>
+                <textarea class="form-control-custom" id="contactMessage" name="message" rows="5" placeholder="Tell us more about your inquiry..." required style="resize:vertical; min-height:140px"></textarea>
+                <div class="error-msg">Please enter your message.</div>
+              </div>
+
+              <!-- Privacy Checkbox -->
+              <div class="form-group-custom" style="display:flex; align-items:flex-start; gap:0.75rem">
+                <input type="checkbox" id="privacyCheck" name="privacy" style="margin-top:3px; accent-color:var(--gold); width:18px; height:18px; cursor:pointer; flex-shrink:0;" required />
+                <label for="privacyCheck" style="font-size:0.88rem; color:rgba(255,255,255,0.55); cursor:pointer; line-height:1.5">
+                  I agree to the <a href="#" style="color:var(--gold)">Privacy Policy</a> and consent to being contacted by the አፒ యము.lk team.
+                </label>
+              </div>
+              <div class="error-msg" id="privacyError" style="margin-top:-1rem; margin-bottom:1rem">You must agree to the privacy policy.</div>
+
+              <button type="submit" class="btn-primary-custom w-100 mt-2" style="border-radius:14px; padding:1rem; font-size:1.05rem">
+                Send Message ✉️
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════
+       CTA STRIP
+  ════════════════ -->
+  <section class="section-pad-sm">
+    <div class="container">
+      <div style="background:linear-gradient(135deg, rgba(107,33,168,0.3), rgba(192,38,211,0.15)); border:1px solid rgba(107,33,168,0.3); border-radius:24px; padding:3.5rem 2rem; text-align:center;" class="fade-in-up">
+        <h2 style="font-size:2.2rem; margin-bottom:1rem">Ready to Explore Events?</h2>
+        <p style="color:rgba(255,255,255,0.55); margin-bottom:2rem; font-size:1.05rem">Don't miss out on what's happening across Sri Lanka.</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <a href="events.html" class="btn-primary-custom">Browse All Events</a>
+          <a href="index.html" class="btn-outline-custom">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <span class="footer-brand">අපි යමු.lk</span>
+          <p class="footer-tagline">Connecting you to the best events across Sri Lanka.</p>
+          <div class="social-links mt-3">
+            <a class="social-link" href="#">📸</a>
+            <a class="social-link" href="#">👥</a>
+            <a class="social-link" href="#">🐦</a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <p class="footer-heading">Navigate</p>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="events.html">Events</a>
+          <a class="footer-link" href="contact.html">Contact Us</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <p class="footer-heading">Categories</p>
+          <a class="footer-link" href="events.html">Concerts</a>
+          <a class="footer-link" href="events.html">Festivals</a>
+          <a class="footer-link" href="events.html">Workshops</a>
+          <a class="footer-link" href="events.html">Sports</a>
+        </div>
+        <div class="col-lg-4">
+          <p class="footer-heading">Legal</p>
+          <a class="footer-link" href="#">Privacy Policy</a>
+          <a class="footer-link" href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 අපි යමු.lk &mdash; Rajarata University of Sri Lanka &nbsp;|&nbsp; ICT 2204 / COM 2303</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Extra validation for contact page specifics -->
+  <script>
+    // Privacy checkbox special validation
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+      const cb = document.getElementById('privacyCheck');
+      const errEl = document.getElementById('privacyError');
+      if (!cb.checked) {
+        errEl.style.display = 'block';
+        e.stopImmediatePropagation();
+      } else {
+        errEl.style.display = 'none';
+      }
+    }, true); // capture phase so it runs before main.js handler
+
+    document.getElementById('privacyCheck')?.addEventListener('change', function() {
+      document.getElementById('privacyError').style.display = 'none';
+    });
+  </script>
+</body>
+</html>

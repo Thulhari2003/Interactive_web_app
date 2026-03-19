@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>අපි යමු.lk – Sri Lanka's Largest Event Site</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════
+       NAVIGATION BAR
+  ════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand-custom" href="index.html">අපි යමු.lk</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span style="color:white; font-size:1.5rem">&#9776;</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link-custom active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="contact.html">Contact Us</a></li>
+          <li class="nav-item ms-2">
+            <a class="btn-primary-custom" href="events.html" style="padding:0.5rem 1.5rem; font-size:0.9rem">Browse Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════ -->
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Left: Text Content -->
+        <div class="col-lg-5 hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Live Events Happening Now
+          </div>
+
+          <h1 class="hero-title">
+            Sri Lanka's <span>Largest</span> Event Site
+          </h1>
+
+          <p class="hero-subtitle">
+            Connecting you to the best concerts, festivals, workshops, and community events happening across Sri Lanka. Explore. Experience. Enjoy.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="events.html" class="btn-primary-custom">Browse All Events</a>
+            <a href="#why-us" class="btn-outline-custom">Learn More</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="250" data-suffix="+">0+</span>
+              <span class="stat-label">Events Listed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="25" data-suffix="">0</span>
+              <span class="stat-label">Cities Covered</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="15000" data-suffix="+">0+</span>
+              <span class="stat-label">Happy Users</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Image Slider / Carousel -->
+        <div class="col-lg-7 hero-carousel-wrap">
+          <div id="heroCarousel" class="carousel slide carousel-custom" data-bs-ride="carousel" data-bs-interval="3500">
+            <div class="carousel-inner">
+
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="event-slide-img" style="background: linear-gradient(135deg, #3b0764, #7c3aed, #c026d3);">
+                  🎶
+                  <div class="slide-overlay">
+                    <span class="slide-tag">🎤 Concert</span>
+                    <p class="slide-title">Colombo Music Fest 2025</p>
+                    <p class="slide-meta">📅 March 28 &nbsp;|&nbsp; 📍 Colombo</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="event-slide-img" style="background: linear-gradient(135deg, #064e3b, #059669, #f59e0b);">
+                  🎭
+                  <div class="slide-overlay">
+                    <span class="slide-tag">🎪 Festival</span>
+                    <p class="slide-title">Kandy Cultural Festival</p>
+                    <p class="slide-meta">📅 April 5 &nbsp;|&nbsp; 📍 Kandy</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="event-slide-img" style="background: linear-gradient(135deg, #1e3a5f, #2563eb, #06b6d4);">
+                  💻
+                  <div class="slide-overlay">
+                    <span class="slide-tag">🖥️ Workshop</span>
+                    <p class="slide-title">Tech Summit Sri Lanka</p>
+                    <p class="slide-meta">📅 April 12 &nbsp;|&nbsp; 📍 Colombo</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <div class="event-slide-img" style="background: linear-gradient(135deg, #4a1942, #be185d, #f97316);">
+                  🏄
+                  <div class="slide-overlay">
+                    <span class="slide-tag">🏆 Sports</span>
+                    <p class="slide-title">Hikkaduwa Beach Sports</p>
+                    <p class="slide-meta">📅 April 20 &nbsp;|&nbsp; 📍 Hikkaduwa</p>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /.carousel-inner -->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div><!-- /.carousel -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       UPCOMING EVENTS (3 Cards)
+  ════════════════════════════════ -->
+  <section class="section-pad" id="upcoming">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-label">Don't Miss Out</span>
+        <h2>Upcoming Events</h2>
+        <p>Handpicked events happening very soon across Sri Lanka</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 fade-in-up fade-delay-1">
+          <div class="event-card" data-category="concert">
+            <div class="event-img-wrap">
+              <div class="event-emoji-bg" style="background: linear-gradient(135deg, #3b0764, #c026d3);">🎶</div>
+            </div>
+            <div class="event-card-body">
+              <span class="event-category cat-concert">🎤 Concert</span>
+              <h3>Colombo Music Fest 2025</h3>
+              <div class="event-meta-row">
+                <span>📅 March 28, 2025</span>
+                <span class="event-city">📍 Colombo</span>
+              </div>
+              <p style="font-size:0.88rem; color:rgba(255,255,255,0.55); margin-bottom:0.5rem">
+                A night of electrifying performances by Sri Lanka's top artists and international guests.
+              </p>
+              <div class="event-footer">
+                <span class="event-price">From LKR 1,500</span>
+                <button class="btn-rsvp" data-event="Colombo Music Fest 2025" data-bs-toggle="modal" data-bs-target="#rsvpModal">RSVP Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 fade-in-up fade-delay-2">
+          <div class="event-card" data-category="festival">
+            <div class="event-img-wrap">
+              <div class="event-emoji-bg" style="background: linear-gradient(135deg, #064e3b, #f59e0b);">🎭</div>
+            </div>
+            <div class="event-card-body">
+              <span class="event-category cat-festival">🎪 Festival</span>
+              <h3>Kandy Cultural Festival</h3>
+              <div class="event-meta-row">
+                <span>📅 April 5, 2025</span>
+                <span class="event-city">📍 Kandy</span>
+              </div>
+              <p style="font-size:0.88rem; color:rgba(255,255,255,0.55); margin-bottom:0.5rem">
+                Celebrate the rich heritage of Kandy with traditional dance, art, and local cuisine.
+              </p>
+              <div class="event-footer">
+                <span class="event-price">Free Entry</span>
+                <button class="btn-rsvp" data-event="Kandy Cultural Festival" data-bs-toggle="modal" data-bs-target="#rsvpModal">RSVP Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 fade-in-up fade-delay-3">
+          <div class="event-card" data-category="workshop">
+            <div class="event-img-wrap">
+              <div class="event-emoji-bg" style="background: linear-gradient(135deg, #1e3a5f, #06b6d4);">💻</div>
+            </div>
+            <div class="event-card-body">
+              <span class="event-category cat-workshop">🖥️ Workshop</span>
+              <h3>Tech Summit Sri Lanka</h3>
+              <div class="event-meta-row">
+                <span>📅 April 12, 2025</span>
+                <span class="event-city">📍 Colombo</span>
+              </div>
+              <p style="font-size:0.88rem; color:rgba(255,255,255,0.55); margin-bottom:0.5rem">
+                Explore the future of technology with industry leaders and startup innovators.
+              </p>
+              <div class="event-footer">
+                <span class="event-price">LKR 500</span>
+                <button class="btn-rsvp" data-event="Tech Summit Sri Lanka" data-bs-toggle="modal" data-bs-target="#rsvpModal">RSVP Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5 fade-in-up">
+        <a href="events.html" class="btn-primary-custom">View All Events &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       TESTIMONIAL
+  ════════════════════════════════ -->
+  <section class="section-pad-sm">
+    <div class="container">
+      <div class="testimonial-wrap fade-in-up">
+        <p class="testimonial-text">
+          "අපි යමු.lk completely changed how I discover events in Sri Lanka — I never miss a concert anymore!"
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">🎵</div>
+          <div class="author-info">
+            <strong>Kavya Perera</strong>
+            <small>Event Attendee, Colombo</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       WHY US SECTION
+  ════════════════════════════════ -->
+  <section class="section-pad" id="why-us">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-label">Why Choose Us</span>
+        <h2>Sri Lanka's Best Event Platform</h2>
+        <p>Stay updated with the top events from coast to coast</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4 fade-in-up fade-delay-1">
+          <div class="why-card">
+            <span class="why-icon">🗓️</span>
+            <h4>Always Up-to-Date</h4>
+            <p>Our event listings are refreshed daily so you're never left out of what's happening near you.</p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in-up fade-delay-2">
+          <div class="why-card">
+            <span class="why-icon">📍</span>
+            <h4>Island-Wide Coverage</h4>
+            <p>From Colombo to Jaffna, Galle to Trincomalee — we cover events in every corner of Sri Lanka.</p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in-up fade-delay-3">
+          <div class="why-card">
+            <span class="why-icon">🎟️</span>
+            <h4>Easy RSVP</h4>
+            <p>Register for events in seconds with our simple RSVP form — no complicated sign-ups needed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       PAST EVENTS ROW
+  ════════════════════════════════ -->
+  <section class="section-pad-sm">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-label">Memories</span>
+        <h2>Past Events</h2>
+        <p>A glimpse of the unforgettable moments we've been a part of</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-4 fade-in-up fade-delay-1">
+          <div style="height:180px; border-radius:14px; background:linear-gradient(135deg,#4a1942,#c026d3); display:flex; align-items:center; justify-content:center; font-size:3rem;">🎆</div>
+        </div>
+        <div class="col-4 fade-in-up fade-delay-2">
+          <div style="height:180px; border-radius:14px; background:linear-gradient(135deg,#064e3b,#059669); display:flex; align-items:center; justify-content:center; font-size:3rem;">🎊</div>
+        </div>
+        <div class="col-4 fade-in-up fade-delay-3">
+          <div style="height:180px; border-radius:14px; background:linear-gradient(135deg,#1e3a5f,#2563eb); display:flex; align-items:center; justify-content:center; font-size:3rem;">🏆</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       RSVP MODAL
+  ════════════════════════════════ -->
+  <div class="modal fade modal-custom" id="rsvpModal" tabindex="-1" aria-labelledby="rsvpModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="rsvpModalTitle">RSVP for Event</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="rsvpForm" novalidate>
+            <input type="hidden" id="modalEventName" name="event" />
+
+            <div class="form-group-custom">
+              <label class="form-label-custom" for="rsvpName">Full Name *</label>
+              <input type="text" class="form-control-custom" id="rsvpName" name="name" placeholder="e.g. Kavya Perera" required />
+              <div class="error-msg">Please enter your full name.</div>
+            </div>
+
+            <div class="form-group-custom">
+              <label class="form-label-custom" for="rsvpEmail">Email Address *</label>
+              <input type="email" class="form-control-custom" id="rsvpEmail" name="email" placeholder="kavya@example.com" required />
+              <div class="error-msg">Please enter a valid email.</div>
+            </div>
+
+            <div class="form-group-custom">
+              <label class="form-label-custom" for="rsvpPhone">Phone Number *</label>
+              <input type="tel" class="form-control-custom" id="rsvpPhone" name="phone" placeholder="+94 77 123 4567" required />
+              <div class="error-msg">Please enter a valid phone number.</div>
+            </div>
+
+            <div class="form-group-custom">
+              <label class="form-label-custom" for="rsvpTickets">Number of Tickets</label>
+              <select class="form-control-custom" id="rsvpTickets" name="tickets">
+                <option value="1">1 Ticket</option>
+                <option value="2">2 Tickets</option>
+                <option value="3">3 Tickets</option>
+                <option value="4">4 Tickets</option>
+              </select>
+              <div class="error-msg"></div>
+            </div>
+
+            <button type="submit" class="btn-primary-custom w-100 mt-2" style="border-radius:12px;">Confirm RSVP 🎉</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <span class="footer-brand">අපි යමු.lk</span>
+          <p class="footer-tagline">Connecting you to the best events across Sri Lanka. Explore. Experience. Enjoy.</p>
+          <div class="social-links mt-3">
+            <a class="social-link" href="#" title="Instagram">📸</a>
+            <a class="social-link" href="#" title="Facebook">👥</a>
+            <a class="social-link" href="#" title="Twitter">🐦</a>
+            <a class="social-link" href="#" title="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <p class="footer-heading">Navigate</p>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="events.html">Events</a>
+          <a class="footer-link" href="contact.html">Contact Us</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <p class="footer-heading">Categories</p>
+          <a class="footer-link" href="events.html">Concerts</a>
+          <a class="footer-link" href="events.html">Festivals</a>
+          <a class="footer-link" href="events.html">Workshops</a>
+          <a class="footer-link" href="events.html">Sports</a>
+        </div>
+        <div class="col-lg-4">
+          <p class="footer-heading">Legal</p>
+          <a class="footer-link" href="#">Privacy Policy</a>
+          <a class="footer-link" href="#">Terms of Service</a>
+          <a class="footer-link" href="#">Cookie Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 අපි යමු.lk &mdash; Rajarata University of Sri Lanka &nbsp;|&nbsp; ICT 2204 / COM 2303 Web Project</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
